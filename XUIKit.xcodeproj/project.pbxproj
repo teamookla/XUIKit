@@ -386,6 +386,27 @@
 			};
 			name = Release;
 		};
+		7240CFB81D8372D800851244 /* Distribution - AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+			};
+			name = "Distribution - AppStore";
+		};
+		7240CFB91D8372D800851244 /* Distribution - AppStore */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5579297D14FEE1FC00FCDE7C /* XUIKit_Mac_Release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PREFIX_HEADER = Source/XUIKitPrefix.pch;
+				MACH_O_TYPE = mh_dylib;
+			};
+			name = "Distribution - AppStore";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,6 +416,7 @@
 				551008DF159BEE4000C86022 /* Debug */,
 				551008E0159BEE4000C86022 /* Profile */,
 				551008E1159BEE4000C86022 /* Release */,
+				7240CFB91D8372D800851244 /* Distribution - AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Profile;
@@ -405,6 +427,7 @@
 				55545A1214EC607B0074B45E /* Debug */,
 				55545A1314EC607B0074B45E /* Profile */,
 				5579298314FEE20900FCDE7C /* Release */,
+				7240CFB81D8372D800851244 /* Distribution - AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Profile;
