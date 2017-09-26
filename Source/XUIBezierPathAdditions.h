@@ -22,6 +22,7 @@
 
 
 @interface NSBezierPath (XUIKitAdditions)
+NS_ASSUME_NONNULL_BEGIN
 
 + (NSBezierPath *) bezierPathWithRoundedRect:(CGRect)rect cornerRadius:(CGFloat)cornerRadius;
 + (NSBezierPath *) bezierPathWithRoundedRect:(CGRect)rect byRoundingCorners:(XUIRectCorner)corners cornerRadii:(CGSize)cornerRadii;
@@ -41,6 +42,7 @@
 
 @property (nonatomic) CGPathRef CGPath;
 - (CGPathRef) CGPath NS_RETURNS_INNER_POINTER;
+NS_ASSUME_NONNULL_END
 
 @property (nonatomic) BOOL usesEvenOddFillRule; // Default is NO. When YES, the even-odd fill rule is used for drawing, clipping, and hit testing.
 
