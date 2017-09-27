@@ -30,6 +30,9 @@
 #import <objc/runtime.h>
 
 
+@interface XUIView () <CALayerDelegate>
+@end
+
 /* Uncomment when implementing -[XUIView setContentMode:] and -[XUIView contentMode]
 
 static const NSInteger sModeToPlacementMapCount = 12;
@@ -91,7 +94,7 @@ static IMP sXUIView_drawRect = NULL;
         
         Class layerClass = [[self class] layerClass];
         if (layerClass) {
-            CALayer *layer = [[layerClass alloc] init];
+            CALayer *layer = (CALayer *) [[layerClass alloc] init];
 
             [layer setFrame:frame];
             [layer setDelegate:self];

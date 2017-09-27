@@ -22,6 +22,7 @@
 
 
 @interface NSBezierPath (XUIKitAdditions)
+NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_BEGIN
 + (NSBezierPath *) bezierPathWithRoundedRect:(CGRect)rect cornerRadius:(CGFloat)cornerRadius;
