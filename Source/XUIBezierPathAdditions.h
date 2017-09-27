@@ -24,30 +24,24 @@
 @interface NSBezierPath (XUIKitAdditions)
 NS_ASSUME_NONNULL_BEGIN
 
-NS_ASSUME_NONNULL_BEGIN
 + (NSBezierPath *) bezierPathWithRoundedRect:(CGRect)rect cornerRadius:(CGFloat)cornerRadius;
 + (NSBezierPath *) bezierPathWithRoundedRect:(CGRect)rect byRoundingCorners:(XUIRectCorner)corners cornerRadii:(CGSize)cornerRadii;
 + (NSBezierPath *) bezierPathWithArcCenter:(CGPoint)center radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle clockwise:(BOOL)clockwise;
 + (NSBezierPath *) bezierPathWithCGPath:(CGPathRef)CGPath;
-NS_ASSUME_NONNULL_END
 
 - (void) addLineToPoint:(CGPoint)point;
 - (void) addCurveToPoint:(CGPoint)endPoint controlPoint1:(CGPoint)controlPoint1 controlPoint2:(CGPoint)controlPoint2;
 - (void) addQuadCurveToPoint:(CGPoint)endPoint controlPoint:(CGPoint)controlPoint;
 - (void) addArcWithCenter:(CGPoint)center radius:(CGFloat)radius startAngle:(CGFloat)startAngle endAngle:(CGFloat)endAngle clockwise:(BOOL)clockwise;
 
-NS_ASSUME_NONNULL_BEGIN
 - (void) appendPath:(NSBezierPath *)bezierPath;
-NS_ASSUME_NONNULL_END
 - (void) applyTransform:(CGAffineTransform)transform;
 
 - (void) fillWithBlendMode:(CGBlendMode)blendMode alpha:(CGFloat)alpha;
 - (void) strokeWithBlendMode:(CGBlendMode)blendMode alpha:(CGFloat)alpha;
 
-NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) CGPathRef CGPath;
 - (CGPathRef) CGPath NS_RETURNS_INNER_POINTER;
-NS_ASSUME_NONNULL_END
 
 @property (nonatomic) BOOL usesEvenOddFillRule; // Default is NO. When YES, the even-odd fill rule is used for drawing, clipping, and hit testing.
 
