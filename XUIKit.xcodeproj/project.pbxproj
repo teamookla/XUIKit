@@ -279,6 +279,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 555459F314EC607B0074B45E;
@@ -327,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5579297B14FEE1FC00FCDE7C /* XUIKit_Mac_Debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -340,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5579297C14FEE1FC00FCDE7C /* XUIKit_Mac_Profile.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -354,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5579297D14FEE1FC00FCDE7C /* XUIKit_Mac_Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -397,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5579297D14FEE1FC00FCDE7C /* XUIKit_Mac_Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
