@@ -52,6 +52,8 @@
     if (floor(NSAppKitVersionNumber) <= NSAppKitVersionNumber10_9) {
         XUIAliasMethod(cls, '-', @selector(xui_CGPath), @selector(CGPath));
     }
+    XUIAliasMethod(cls, '-', @selector(xui_CGPath), @selector(XuiCGPath));
+
 }
 
 
