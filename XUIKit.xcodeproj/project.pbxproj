@@ -335,7 +335,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PREFIX_HEADER = Source/XUIKitPrefix.pch;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -351,7 +351,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PREFIX_HEADER = Source/XUIKitPrefix.pch;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Profile;
 		};
@@ -367,14 +367,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PREFIX_HEADER = Source/XUIKitPrefix.pch;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
 		55545A1214EC607B0074B45E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
@@ -382,21 +382,21 @@
 		55545A1314EC607B0074B45E /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Profile;
 		};
 		5579298314FEE20900FCDE7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
 		7240CFB81D8372D800851244 /* Distribution - AppStore */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = "Distribution - AppStore";
 		};
@@ -412,7 +412,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				GCC_PREFIX_HEADER = Source/XUIKitPrefix.pch;
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = "Distribution - AppStore";
 		};
